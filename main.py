@@ -1,16 +1,16 @@
-# This is a sample Python script.
+condition = True
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def main():
+    while condition == True:
+        print("Menu")
+        print("----------")
+        print("1. Encode\n2. Decode\n3. Quit\n")
+        option = str(input("Please enter an option: "))
+        if option == "1":
+            code = input("Please enter your password to encode: ")
+            print("Your password has been encoded and stored!\n")
+        elif option == "3":
+            exit()
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if __name__ == "__main__":
+    main()

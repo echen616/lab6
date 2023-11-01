@@ -13,6 +13,9 @@ def main():
             global password
             password = input("Please enter your password to encode: ")
             print("Your password has been encoded and stored!\n")
+        elif option == "2":
+            decode()
+
         elif option == "3":
             exit()
 def encode(password):
@@ -39,6 +42,8 @@ def encode(password):
         elif element == "9":
             newpass += "2"
     return newpass
-
+def decode():
+    print(f"The encoded password is {encode(password)}, and the original password is {password}.")
 if __name__ == "__main__":
     main()
+
